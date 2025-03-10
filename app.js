@@ -19,15 +19,15 @@ function agregarAmigo() {
 // Función para verificar si el nombre del amigo es válido
 function verificar(nombre) {
     if (!nombre.trim()) {
-        alert("Debes ingresar un nombre.");
+        alert("(No intentes agregar algo vacío) Debes ingresar un nombre.");
         return false;
     }
     if (!/^[a-zA-Z\s]+$/.test(nombre)) {
-        alert("El nombre solo debe contener letras.");
+        alert("El nombre no debe contener números, SOLO LETRAS.");
         return false;
     }
     if (amigos.includes(nombre)) {
-        alert("Este amigo ya fue agregado.");
+        alert("Este amigo ya fue agregado.)");
         return false;
     }
     // Por si acaso lo limito a 5 amigos
