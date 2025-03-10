@@ -16,7 +16,19 @@ function agregarAmigo() {
 
 // Función para verificar si el nombre del amigo es válido
 function verificar(nombre) {
-    
+    if (!nombre.trim()) {
+        alert("Debes ingresar un nombre.");
+        return false;
+    }
+    if (amigos.includes(nombre)) {
+        alert("Este amigo ya fue agregado.");
+        return false;
+    }
+    if (amigos.length >= 5) {
+        alert("Ya tienes 5 amigos agregados.");
+        return false;
+    }
+    return true;
 }
 
 function listarAmigos() {
