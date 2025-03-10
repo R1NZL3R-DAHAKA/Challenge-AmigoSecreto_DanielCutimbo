@@ -32,13 +32,27 @@ function verificar(nombre) {
 }
 
 function listarAmigos() {
-    
+    let lista = document.getElementById("listaAmigos");
+    lista.innerHTML = ""; // Limpiar antes de actualizar
+
+    amigos.forEach((amigo) => {
+        let li = document.createElement("li");
+        li.textContent = amigo;
+        lista.appendChild(li);
+    });
 }
 
 function sortearAmigo() {
-    
+    if (amigos.length === 0) {
+        alert("Agrega al menos un amigo antes de sortear.");
+        return;
+    }
+
+    let amigoSecreto = amigos[Math.floor(Math.random() * amigos.length)];
+    mostrarResultado(amigoSecreto);
 }
 
 function mostrarResultado(amigoSecreto) {
-    
+    let resultado = document.getElementById("resultado");
+    resultado.innerHTML = `<h2>[[[ El amigo secreto es: <strong>${amigoSecreto}</strong> ]]]</h2>`;
 }
