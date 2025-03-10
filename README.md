@@ -16,17 +16,18 @@ Este es un pequeño proyecto web que permite ingresar nombres de amigos en una l
 - CSS3 (Template)
 - JavaScript (Creación propia)
 
-## Estructura del proyecto
-
-📂 amigo-secreto
-│-- 📂 assets           # Imágenes y recursos (Template)
-│-- index.html          # Página principal (Template)
-│-- style.css           # Estilos principales (Template)
-│-- app.js              # Lógica del proyecto (Desarrollado por mi)
-│-- README.md           # Este archivo
-
 ## Cosas a mejorar a futuro
 
 - Menu de opciones para el límite de amigos
 - Opción para eliminar/eliminar el nombre de la lista (completar CRUD básico)
 - Mejorar el diseño (aunque me cueste xD)
+
+## Estructura del proyecto
+
+```txt
+📂 amigo-secreto
+├── 📂 assets          # Imágenes y recursos (Template)
+├── 📄 index.html      # Página principal (Template)
+├── 📄 style.css       # Estilos principales (Template)
+├── 📄 app.js          # Lógica del proyecto (Desarrollado por mí)
+└── 📄 README.md       # Este archivo
